@@ -1,0 +1,18 @@
+.DS_Store
+
+# Statamic files #
+######################
+
+_content/*
+
+_config/users/*
+
+!_config/users/admin.yaml
+!_config/users/index.html
+
+_cache/*
+!_cache/index.html
+_logs/*
+!_logs/index.html
+
+!.gitkeep
