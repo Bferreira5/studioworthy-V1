@@ -1,0 +1,321 @@
+title: Story Page
+
+fields:
+
+  page_title:
+    type: text
+    display: Page Title in Browser
+    instructions: Optional - override the title used above for SEO purposes
+
+  meta_description:
+    type: text
+    display: Meta Description
+
+  Front_page_stack:
+    type: section
+    display: Story Deck
+    instructions: This page type is designed for visual story telling in modules. Links or images may be used within each.
+
+  front_page_replicator:
+    type: replicator
+    instructions: Replicate a new set for each piece of content you need.
+
+    sets:
+
+      headline_set:
+        display: Headline Large
+        instructions: Add a section title.
+        fields:
+          background:
+            display: Add a hero image or not
+            type: file
+            allowed: ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG']
+            destination: assets/img/story/
+          headline:
+            type: limited
+            limit: 72
+            instructions: enter text to limit
+          text:
+            type: limited
+            limit: 260
+            instructions: enter text to limit
+          arrow:
+              display: Add a Nav Arrow
+              type: select
+              options:
+                none: None
+                up: Pointing Up
+                down: Pointing Down
+          styled:
+              display: Copy box prestyled select
+              type: select
+              options:
+                light: light style
+                dark: dark style
+
+      content_set:
+        display: Content
+        instructions: A basic block of text
+        fields:
+          text:
+            display: Text
+            type: markitup
+          styled:
+              display: Copy box prestyled select
+              type: select
+              options:
+                light: light style
+                dark: dark style
+
+      grid_movable_type_set:
+        display: Grid with movable type
+        instructions: Build out the block.
+        fields:
+          headline:
+            type: limited
+            limit: 48
+            instructions: enter text to limit
+          html:
+            type: textarea
+            display: A Textarea Field
+            height: 300
+          styled:
+              display: Copy box prestyled select
+              type: select
+              options:
+                light: light style
+                dark: dark style
+
+      grid_side_burst_set:
+        display: Grid with side burst
+        instructions: Build out the block.
+        fields:
+          background:
+            type: file
+            allowed: ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG']
+            destination: assets/img/story/
+          position:
+            display: Copy box prestyled select
+            type: select
+            options:
+              left: left alignment
+              right: right alignment
+          shape:
+            display: Text box type
+            type: select
+            options:
+              big-text: Large Text with no cta.
+              with-cta: Normal Text with cta.
+          styled:
+              display: Copy box prestyled select
+              type: select
+              options:
+                light: light style
+                dark: dark style
+          headline:
+            type: limited
+            limit: 48
+            instructions: enter text to limit
+          text:
+            type: limited
+            limit: 180
+            instructions: enter text to limit
+          cta-text:
+            type: limited
+            limit: 140
+            instructions: enter text to limit
+          link:
+            type: text
+            instructions: enter reletive link
+          linktext:
+            type: text
+            instructions: enter reletive copy
+
+      grid_bar_set:
+        display: Bar Size Grid
+        instructions: Build out the block.
+        fields:
+          background:
+            type: file
+            allowed: ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG']
+            destination: assets/img/story/
+          shape:
+            display: Text box type
+            type: select
+            options:
+              big-text: Large Text with no cta.
+              with-cta: Normal Text with cta.
+          styled:
+              display: Copy box prestyled select
+              type: select
+              options:
+                light: light style
+                dark: dark style
+          headline:
+            type: limited
+            limit: 48
+            instructions: enter text to limit
+          text:
+            type: limited
+            limit: 180
+            instructions: enter text to limit
+          cta-text:
+            type: limited
+            limit: 140
+            instructions: enter text to limit
+          link:
+            type: text
+            instructions: enter reletive link
+          linktext:
+            type: text
+            instructions: enter reletive copy
+
+      grid_module_set:
+        display: Module Grid
+        instructions: Build out the block.
+        fields:
+         grid_field:
+          display: A grid
+          type: grid
+          starting_rows: 1
+          fields:
+            background:
+              type: file
+              allowed: ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG']
+              destination: assets/img/story/
+            shape:
+              display: Text box type
+              type: select
+              options:
+                big-text: Large Text with no cta.
+                with-cta: Normal Text with cta.
+                image: With image only.
+            styled:
+                display: Copy box prestyled select
+                type: select
+                options:
+                  light: light style
+                  dark: dark style
+            headline:
+              type: limited
+              limit: 48
+              instructions: enter text to limit
+            text:
+              type: limited
+              limit: 180
+              instructions: enter text to limit
+            cta-text:
+              type: limited
+              limit: 140
+              instructions: enter text to limit
+            link:
+              type: text
+              instructions: enter reletive link
+            linktext:
+              type: text
+              instructions: enter reletive copy
+
+      grid_bulletpoint_set:
+        display: Bulletpoint Grid
+        instructions: Build out the block.
+        fields:
+         grid_field:
+          display: A grid
+          type: grid
+          starting_rows: 3
+          fields:
+            icon:
+              type: file
+              allowed: ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG']
+              destination: assets/img/story/
+            headline:
+              type: limited
+              limit: 48
+              instructions: enter text to limit
+            text:
+              type: limited
+              limit: 230
+              instructions: enter text to limit
+            link:
+              type: text
+              instructions: enter reletive link
+            linktext:
+              type: text
+              instructions: enter reletive copy
+
+
+      grid_dynamic_blog_set:
+        display: Dynamic Content Blog
+        instructions: Pull from Blog.
+        fields:
+          featured:
+            display: Featured Articles
+            type: suggest
+            create: false
+            max_items: 5
+            content:
+              folder: blog
+              type: categories
+              labels: title
+              value: url
+          headline:
+            type: limited
+            limit: 48
+            instructions: enter text to limit
+          text:
+            type: limited
+            limit: 180
+            instructions: enter text to limit
+          cta-text:
+            type: limited
+            limit: 140
+            instructions: enter text to limit
+          link:
+            type: text
+            instructions: enter reletive link
+          linktext:
+            type: text
+            instructions: enter reletive copy
+
+      grid_dynamic_portfolio_set:
+        display: Dynamic Content Portfolio
+        instructions: Pull from Portfolio.
+        fields:
+          featured:
+            display: Featured Articles
+            type: suggest
+            create: false
+            max_items: 6
+            content:
+              folder: selected-work
+              labels: title
+              value: url
+          headline:
+            type: limited
+            limit: 48
+            instructions: enter text to limit
+          text:
+            type: limited
+            limit: 180
+            instructions: enter text to limit
+          cta-text:
+            type: limited
+            limit: 140
+            instructions: enter text to limit
+          link:
+            type: text
+            instructions: enter reletive link
+          linktext:
+            type: text
+            instructions: enter reletive copy
+
+  hide_thumbnail_captions:
+    type: checkbox
+    display: Hide Thumbnail Captions?
+    default: 0
+
+  content:
+    type: hidden
+
+  _template:
+    default: story-page

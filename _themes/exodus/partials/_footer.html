@@ -1,0 +1,52 @@
+{{ get_content from="/footer" }}
+
+<footer class="footer {{ styled }}" role="contentinfo">
+	<div class="bar"></div>
+	<div class="content">
+		<div class="general">
+			<div class="copy-box">
+				<h3 class="contact-title">{{ contact_title }}</h3>
+				<a class="read-more" href="mailto:{{ email }}">{{ email_copy }}</a>
+				
+				<h4>{{ subscribe_copy }}</h4>
+				<form class="email-sub">
+					<input type="text" id="text_field" placeholder="Email"/>
+					<button type="submit" value="Submit">
+					Submit
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="location">
+			<div class="copy-box">
+				<h3>{{ location_title }}</h3>
+				<address>
+					{{ if location_address:0:address_info_label }}
+						<ul>
+							{{ location_address}}
+							<li>
+								{{ if address_info_label }}{{ address_info_label }}{{ endif }}
+							</li>
+							{{ /location_address }}
+						</ul>
+					{{ endif }}
+				</address>
+				<p>{{ colophon_small }} <span><a class="read-more" href="{{ colophone-link }}">{{ colophon_cta }}</a></span></p>
+			</div>
+	</div>
+	<div class="copyright">
+		<div class="copy-box">
+			<div class="bottom-cell">
+				<p>{{ site_profile }}</p>
+			</div>
+			<div class="bottom-cell">
+				<p>{{ site_copyright }}</p>
+			</div>
+			<div class="bottom-cell">
+				<p>{{ site_note }}</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+{{ /get_content }}

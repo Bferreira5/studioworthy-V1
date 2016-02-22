@@ -1,0 +1,136 @@
+//////////// Large headlines or inline paragraphs
+	.grid-item-headline {
+		border-bottom: 1em solid $nue-black;
+		@include MQ(S) {
+			height: 100vh;
+			min-height: 500px; 
+			max-height: 800px;
+		}
+		@include MQ(M) {
+			height: 100vh;
+			min-height: 950px; 
+			max-height: 100%;
+		}
+		@include MQ(L) {
+			height: 100vh;
+			min-height: 800px;
+			max-height: 1500px;
+		}
+
+		.copy-internal {
+			display: table;
+			width: 100%;
+			height: 100%;
+
+			.copy-box {
+
+				display: table-cell;
+				vertical-align: middle;
+				@include MQ(S) {
+					@include margin(auto);
+					@include padding(1.5rem);
+				}
+				@include MQ(M) {
+					@include margin(auto);
+					@include padding(4rem);
+				}
+				@include MQ(L) {
+					@include margin(auto);
+					@include padding(4rem);
+				}
+				.copy-content {
+					max-width: 90em;
+					margin: auto;
+					.copy-headline {
+						h1 {
+							@include MQ(S) {
+								font-size: $base-font-size * 3;
+								line-height: $base-line-height * .8;
+								text-align: left;
+							}
+							@include MQ(M) {
+								font-size: $base-font-size * 5.0;
+								line-height: $base-line-height * 1;
+								text-align: left;
+							}
+							@include MQ(L) {
+								font-size: $base-font-size * 6.0;
+								line-height: $base-line-height * .8;
+								text-align: center;
+							}
+						}
+					}
+					.copy-detail {
+						p {
+							@include MQ(S) {
+								font-family: $header-font-family;
+								font-style: italic; 
+								font-size: $base-font-size * 1.1;
+								line-height: $base-line-height * 1;
+								text-align: left;
+							}
+							@include MQ(M) {
+								font-family: $header-font-family;
+								font-size: $base-font-size * 2.5;
+								line-height: $base-line-height * .9;
+								text-align: left;
+							}
+							@include MQ(L) {
+								font-family: $header-font-family;
+								font-size: $base-font-size * 3;
+								line-height: $base-line-height * .8;
+								text-align: center;
+							}
+						}
+						.headline-pattern {
+							@include pattern-two;
+							width: 100%;
+							height: 1rem;
+						}
+					}
+					.copy-ornament {
+						text-align: center;
+						p {
+							max-width: 700px;
+							@include margin(4em auto 1em auto);
+							@include MQ(S) {
+								font-family: $header-font-family;
+								font-size: $base-font-size * .9;
+								line-height: $base-line-height * .9;
+								text-align: center;
+							}
+							@include MQ(M) {
+								font-family: $header-font-family;
+								font-size: $base-font-size * 1;
+								line-height: $base-line-height * .9;
+								text-align: center;
+							}
+							@include MQ(L) {
+								font-family: $header-font-family;
+								font-size: $base-font-size * 1.2;
+								line-height: $base-line-height * .8;
+								text-align: center;
+							}
+						}
+						a {
+							@include margin(0 auto);
+							@include MQ(S) {
+								font-family: $header-font-family;
+								font-weight: 700;
+								font-size: $base-font-size * .9;
+								line-height: $base-line-height * .9;
+								text-align: center;
+							}
+							@include MQ(L) {
+								font-family: $header-font-family;
+								font-size: $base-font-size * 5;
+								line-height: $base-line-height * .2;
+								font-weight: 700;
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+		}
+	}

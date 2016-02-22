@@ -1,0 +1,71 @@
+hide: true
+
+fields:
+
+  page_title:
+    type: text
+    display: Page Title in Browser
+    instructions: Optional - override the title used above for SEO purposes
+
+  meta_description:
+    type: text
+    display: Meta Description
+
+  categories:
+    type: suggest
+    display: Categories
+    create: true
+    taxonomy:
+      folder: blog
+      type: categories
+
+  subtitle:
+    type: text
+    display: Subtitle for title
+
+  excerpt:
+    type: limited
+    limit: 250
+    display: Thumbnail Copy
+    instructions: enter text to limit
+
+  thumbnail_img_src:
+    type: file
+    display: Upload Thumbnail Image
+    instructions: PNG, JPG or GIF sized 328x203
+    allowed: [png, gif, jpg, jpeg]
+    destination: assets/img/blog/thumb/
+    max_files: 1
+    show_thumbnail: true
+    required: true
+
+  hero_image:
+    type: file
+    display: Upload Hero Image
+    instructions: PNG, JPG or GIF sized 328x203
+    allowed: [png, gif, jpg, jpeg]
+    destination: assets/img/blog/
+    max_files: 1
+    show_thumbnail: true
+    required: true
+
+  caption:
+    type: limited
+    limit: 200
+    display: Power Copy
+    instructions: enter text to limit
+
+  content:
+    type: markitup
+    display: Mark It Up!
+    image_dir: assets/img/blog/inline/
+    file_dir: assets/files/
+
+  has_comments:
+    type: checkbox
+    display: Enable Comments?
+    default: 0
+
+  _template:
+    type: hidden
+    default: blog-post

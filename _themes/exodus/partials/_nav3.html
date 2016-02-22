@@ -1,0 +1,26 @@
+<nav class="cd-primary-nav">
+	<ul>
+		<li><a href="/" {{ if !segment_1 }} class="current" {{ endif }}>{{ get_content from="/" }}{{ title }}{{ /get_content }}</a></li>
+				
+		{{ nav from="/" max_depth="4" {{# exclude="selected-work" #}}  }}
+			<li>
+				<a href="{{ url }}" {{ if is_current }} class="current" {{ endif }}>{{ title }}</a>
+				{{ if is_current || is_parent }}
+		          {{#  {{ if children }}
+		               <ul class="sub-nav">{{ *recursive children* }}</ul>
+		            {{ endif }} #}}	
+		         {{ endif }} 
+			</li>
+		{{ /nav }}	
+
+
+		{{ get_content from="/settings" }}
+		{{ main_nav_link_grid }}
+		{{ if copy_main_nav_link }}
+				<li><a href="{{ main_nav_link_url }}" target="_blank">{{ copy_main_nav_link }}</a></li>
+		{{ endif }}
+		{{ /main_nav_link_grid }}
+		{{ /get_content }}
+	</ul>
+</nav>
+

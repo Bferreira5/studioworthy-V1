@@ -1,0 +1,36 @@
+{{ theme:partial src="_blog_top" }}
+<section class="blog-listing">
+	<div class="flex-listing">
+		{{ entries:listing folder="blog" limit="{ num_blog_posts_per_page }" }}
+			<article class="flex-box">
+				<div class="copy-box">
+					<div class="copy-img">
+						<a class="flex-img" style="background-image: url('{{ thumbnail_img_src }}')" href="/blog/{{ slug }}">
+						</a>
+					</div>
+					<div class="over">
+						{{ if categories|length > 0 }}
+						<ul class="head-tags">
+							{{ get_content from="/blog" }}
+							<li class="head-label">{{ copy_blog_tags }}:</li>
+							{{ /get_content }} 
+								{{ categories }}
+									<li class="head-tag"><a href="/blog/categories/{{ value }}">{{ value }}</a></li>
+								{{ /categories }}
+						</ul>
+						{{ endif }}
+							<h1 class="entry-title"><a href="{{ url }}">{{ title }}</a></h1>
+							<p class="date">{{ date }}</p>
+							<hr>
+							<p class="excerpt">{{ excerpt|truncate:250 }}</p>
+							{{ if copy_blog_read_more }}
+								<a class="read-more" href="{{ url }}">{{ copy_blog_read_more }}</a>
+							{{ endif }}
+					</div>
+				</div>
+			</article>
+		{{ /entries:listing }}
+	</div>
+</section>
+{{ theme:partial src="_blog_bottom" }}
+

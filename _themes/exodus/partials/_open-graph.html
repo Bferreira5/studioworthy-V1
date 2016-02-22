@@ -1,0 +1,20 @@
+<meta property="og:title" content="{{ theme:partial src="_page-title" }}" />
+<meta property="og:site_name" content="{{ get_content from="/settings" }}{{ copy_site_title }}{{ /get_content }}"/>
+<meta property="og:url" content="{{ _site_url }}{{ current_url }}" />
+<meta property="og:description" content="{{ theme:partial src="_meta-description" }}" />
+
+
+{{ if segment_1 == "blog" && segment_2 }}
+<meta property="og:image" content="{{ _site_url }}/assets/blog/og/hawthorne-{{ date format="Y-m-d" }}.png" />
+
+{{ else }}
+<meta property="og:image" content="{{ _site_url }}/assets/img/hawthorne-og.png" />
+{{ endif }}
+
+{{ if segment_1 == "blog" && segment_2 }}
+<meta property="og:type" content="article" />
+<meta property="article:author" content="https://www.facebook.com" />
+{{ endif }}
+
+
+<meta property="fb:admins" content="" />

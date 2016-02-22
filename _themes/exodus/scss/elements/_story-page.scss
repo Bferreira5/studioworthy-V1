@@ -1,0 +1,28 @@
+.grid {
+	@include clearfix;
+	@include display(flex);
+	@include justify-content(center);
+	@include align-items(stretch);
+	@include flex-wrap(wrap);
+	clear: both;
+	.grid-item {
+		flex: 1 1 100%;
+		overflow: hidden;
+	}
+}
+.grid-dynamic {
+	@include clearfix;
+	@include display(flex);
+	@include justify-content(center);
+	@include align-items(stretch);
+	@include flex-wrap(wrap);
+	clear: both;
+}
+// import
+@import "story-page/story-bar";
+@import "story-page/story-side-burst";
+@import "story-page/story-content";
+@import "story-page/story-grids";
+@import "story-page/story-headline";
+@import "story-page/story-movable-type";
+@import "story-page/story-dynamic-content";

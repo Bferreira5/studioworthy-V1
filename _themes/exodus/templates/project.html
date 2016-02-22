@@ -1,0 +1,109 @@
+<section class="project"> 
+	{{ if hero_image:0:hero_img_src }}
+		{{ hero_image }}
+			<div style="background-image: url('{{ hero_img_src }}')" class="hero-image">
+				<div class="copy-inside">
+					<div class="copy-box">
+						<p><span>Project</span></p>
+						<h1><span>{{ title }}</span></h1>
+						<h2><span>{{ subtitle }}</span></h2>
+						<h3 class="date"><span>{{ project_date format="F Y"}}</span></h3> 
+					</div>
+				</div>
+			</div>
+		{{ /hero_image }}
+	{{ endif }}
+
+	{{ if timeline_grid }}
+		<ul class="timeline">
+		{{ timeline_grid }}
+			<li>
+				<p class="timeline-date">{{ timeline_date format="M d Y" }}</p>
+				<div class="timeline-content">
+					<h3>{{ timeline_event }}</h3>
+					<p>{{ timeline_description }}</p>
+				</div>
+			</li>
+		{{ /timeline_grid }}
+		</ul>
+	{{ endif }}
+
+	<div class="project-article">
+		{{ project_content }}
+			
+			{{ if type == "table_set" }}
+			<article class="table-set">
+				<h1>{{ table_header }}</h1>
+				<hr class="underline" />
+				<div class="copy-box">
+					{{ inline_table|table }}
+				</div>
+			</article>	
+			
+			{{ elseif type == "content_set" }}
+			<article class="content-set">
+				<div class="copy-box">
+			  		{{ text|markdown }}
+			  	</div>
+			  <hr class="underline" />
+			</article>
+
+			{{ elseif type == "headline_set" }}
+				<div class="headline-set">
+					<h1 class="bold-headline">{{ headline }}</h1>
+					<hr class="underline" />
+				</div>
+
+			{{ elseif type == "quote_set" }}
+				<div class="qoute-set">
+					<blockquote>
+						<p>{{ quote }}</p>
+						<p class="cite">&mdash; {{ cite }}</p>
+					</blockquote>
+					
+				</div>
+
+			{{ elseif type == "client_stamp_set"}}  
+				<div class="client-set">
+					<div class="copy-box">
+						<h3>{{ job }}</h3>
+						<p><em>{{ time }}</em></p>
+						<p><strong>{{ employer }}</strong></p>
+						<p>{{ description }}</p>
+					</div>
+				</div>
+
+			{{ elseif type == "image_callout_set"}}  
+				<div style="background-image: url('{{ background }}')" class="image-callout-set">
+					<div class="copy-internal">
+						<div class="copy-box {{ position }}">
+							<div class="copy-detail big-text">
+								<p>{{ text }}</p>
+								<hr/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			{{ elseif type == "video_set" }}
+			<div class="video-set">
+				{{ video:{{ video_provider }} src="{{ video_link }}" }} 
+			</div>
+
+			{{ elseif type == "image_set" }}
+			<figure class="image-set">
+				<img src="{{ photo }}" alt="{{ caption }}" />
+			</figure>
+
+			{{ elseif type == "code_set" }}
+				<div class="code-set">
+					<pre><code>{{ code }}</code></pre>
+				</div>
+			
+			{{ endif }}
+		{{ /project_content }}
+	</div>
+
+	
+
+</section>

@@ -1,0 +1,60 @@
+<section class="blog-style">
+	<div style="background-image: url('{{ hero_image }}')" class="blog-header">
+		<div class="copy-inside">
+			<div class="copy-box">
+				<h1 class="title">{{ title }}</h1>
+				<h2 class="subtitle">{{ subtitle }}</h2>
+				<h3 class="date">{{ date }}</h3>
+			</div>
+		</div>
+	</div>
+	<article class="blog-article">
+		<div class="blog-intro">
+			<div class="blog-corner">
+				<h1 class="inline-title"><span>{{ title }}</span></h1>
+				<h2 class="inline-date"><span>{{ date }}</span></h2>
+				{{ if categories|length > 0 }}
+				<ul class="head-tags">
+					{{ get_content from="/blog" }}
+					<li class="head-label">{{ copy_blog_tags }}:</li>
+					{{ /get_content }} 
+						{{ categories }}
+							<li class="head-tag-post"><a href="/blog/categories/{{ value }}">{{ value }}</a></li>
+						{{ /categories }}
+				</ul>
+				{{ endif }}
+			</div>
+			<hr class="long"/>
+			<h3 class="blog-caption">{{ caption }}</h3>
+		</div>
+		<div class="blog-content">
+			{{ content }}
+		</div>
+		<aside class="blog-sidebar">
+			<div class="related-posts">
+				{{ entries:listing folder="blog" limit="1" conditions="categories:{categories_option_list}, url:not {page_url}" sort_by="random" }}
+				{{ if total_results > 0 }}
+				<h5>{{ get_content from="/blog" }}{{ copy_blog_related_posts }}{{ /get_content }}</h5>
+				{{ endif }}
+				{{ /entries:listing }}
+				<hr/>
+				<ul>
+					{{ entries:listing folder="blog" limit="3" conditions="categories:{categories_option_list}, url:not {page_url}" sort_by="random" }}
+					{{ if total_results > 0 }}
+					<li><a href="{{ url }}">{{ title }}</a></li>
+					{{ endif }}
+					{{ /entries:listing }}
+				</ul>
+			</div>	
+		</aside>
+		<div class="blog-back">
+			<p><a href="/{{ segment_1 }}">{{ get_content from="/blog" }}&larr; {{ copy_blog_home }}{{ /get_content }}</a></p>
+		</div>
+	</article>
+
+	{{ if has_comments }}
+		<div class="comments">
+		</div>
+	{{ endif }}
+</section>
+{{ theme:partial src="_article_bottom" }}

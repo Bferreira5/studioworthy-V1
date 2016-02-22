@@ -1,0 +1,89 @@
+hide: yes
+
+fields:
+
+  background:
+    type: file
+    allowed: ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG']
+    destination: assets/img/story/
+
+  styled:
+    display: Color theme
+    type: select
+    options:
+      yellow: Yellow style
+      green: Green style
+      red: Red style
+      light: light style
+      dark: dark style
+
+  general_section:
+    type: section
+    instructions: Add email contact form.
+
+  contact_title:
+    type: limited
+    limit: 48
+    instructions: enter text to limit
+
+  email:
+    type: text
+    instructions: enter desired email address to contact
+
+  email_copy:
+    type: text
+    instructions: enter email call to action copy
+
+  location_section:
+    type: section
+    instructions: Add address below.
+
+  location_title:
+    type: limited
+    limit: 48
+    instructions: enter text to limit
+
+  location_address:
+    type: grid
+    display: Address Info
+    starting_rows: 4
+    fields:
+      address_info_label:
+        display: Label
+        type: text
+        width: 100%
+
+  copyright_section:
+    type: section
+    instructions: Add copyright and closing below.
+
+  site_profile:
+    type: limited
+    limit: 48
+    instructions: enter text to limit
+
+  site_copyright:
+    type: limited
+    limit: 48
+    instructions: enter text to limit
+
+  colophon_small:
+    type: limited
+    limit: 160
+    instructions: enter text to limit
+
+  colophon_link:
+    type: text
+    instructions: enter desired email address to contact
+
+  colophon_cta:
+    type: text
+    instructions: enter desired email address to contact
+
+  site_note:
+    type: limited
+    limit: 48
+    instructions: enter text to limit
+
+  content:
+    type: hidden

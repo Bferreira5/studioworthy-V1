@@ -1,0 +1,27 @@
+hide: yes
+
+fields:
+
+  copy_site_title:
+    type: text
+    display: Site Title
+    instructions: Site Title in Browser
+
+  email_address:
+    type: text
+    display: Email Address
+
+  copy_logo:
+    type: text
+    display: Logo Text
+
+  copy_tagline:
+    type: text
+    display: Tagline Text
+
+  analytics_code:
+    type: textarea
+    display: Analytics Code
+
+  content:
+    type: hidden

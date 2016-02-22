@@ -1,0 +1,216 @@
+.blog-style {
+	@include outer-container;
+	.blog-header {
+		min-height: rem(400px);
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		overflow: hidden;
+		background-color: $nue-black;
+		.copy-inside {
+			.copy-box {
+				max-width: rem(1200px);
+				text-align: center;
+				@include MQ(S) {
+					@include margin(25vh auto);
+				}
+				@include MQ(M) {
+					@include margin(25vh auto);
+				}
+				@include MQ(L) {
+					@include margin(25vh auto);
+				}
+
+				h1 {
+					color: $slight-white;
+					@include MQ(S) {
+						font-size: $base-font-size * 2;
+					}
+					@include MQ(M) {
+						font-size: $base-font-size * 6;
+					}
+					@include MQ(L) {
+						font-size: $base-font-size * 7;
+					}
+				}
+				p.date {
+					color: $slight-white;
+					@include MQ(S) {
+						font-size: $base-font-size * 1;
+					}
+					@include MQ(M) {
+						font-size: $base-font-size * 2;
+					}
+					@include MQ(L) {
+						font-size: $base-font-size * 4;
+					}
+				}
+				hr.class {
+
+				}
+			}
+		}
+	}
+	article.blog-article {
+		background-color: $base-body-color;
+		position: relative;
+
+		@include MQ(S) {
+			@include margin(-10.9rem auto 0);
+			max-width: rem(680px);
+		}
+		@include MQ(M) {
+			@include margin(-10.9rem auto 0);
+			max-width: rem(680px);
+		}
+		@include MQ(L) {
+			@include margin(-10.9rem auto 0);
+			max-width: rem(880px);
+		}
+		.blog-intro {
+			@include MQ(S) {
+				@include padding(1rem 2rem null);
+				min-height: rem(60px); 
+			}
+			@include MQ(M) {
+				@include padding(1rem 2rem null);
+				min-height: rem(180px); 
+			}
+			@include MQ(L) {
+				@include padding(1rem 2rem null);
+				min-height: rem(180px); 
+			}
+			.blog-corner {
+				h1.inline-title {
+					display: inline-block;
+					font-family: $sans-serif;
+					font-weight: 700;
+					font-size: $base-font-size * .7; 
+					padding: 0;
+					line-height: $base-line-height*.9;
+					span {
+						text-transform: uppercase;
+						padding: .1em .4em;
+						color: $slight-white;
+						display: inline-block;
+						transition: background .15s cubic-bezier(.33,.66,.66,1);
+						background: tint( $nue-black, 20%);
+						opacity: .3;
+					}
+				}
+				h2.inline-date {
+					display: inline-block;
+					font-family: $sans-serif;
+					font-weight: 700;
+					font-size: $base-font-size * .7; 
+					padding: 0;
+					line-height: $base-line-height*.9;
+					span {
+						text-transform: uppercase;
+						padding: .1em .4em;
+						color: $slight-white;
+						display: inline-block;
+						transition: background .15s cubic-bezier(.33,.66,.66,1);
+						background: tint( $nue-black, 20%);
+						opacity: .3;
+					}
+				}
+			}
+			h3.blog-power {
+				  @include MQ(S) {
+				      font-size: $base-font-size * 1; // 16 * 2.25
+				  }
+				  @include MQ(SM) {
+				      font-size: $base-font-size * 1; // 16 * 2.25
+				  }
+				  @include MQ(M) {
+				      font-size: $base-font-size * 1.5; // 16 * 2.50
+				  }
+				  @include MQ(L) {
+				      font-size: $base-font-size * 1.75; // 16 * 2.00
+				  }
+			}
+			hr {
+				border-bottom: .6rem solid transparentize($base-font-color, .4);
+				border-left: none;
+				border-right: none;
+				border-top: none;
+				text-align: left;
+				margin-left: 0; 
+				width: 18rem;
+			}
+		}
+		aside.blog-sidebar {
+			@include MQ(S) {
+				display: block;
+				text-align: right;
+				@include margin(1rem 2rem null);
+				opacity: .3;
+				hr {
+					border-bottom: .3rem solid transparentize($base-font-color, .4);
+					border-left: none;
+					border-right: none;
+					border-top: none;
+					text-align: right; 
+					margin-right: 0;
+					width: 8rem;
+				}
+			}
+			@include MQ(M) {
+				display: block;
+				text-align: right;
+				@include margin(1rem 2rem null);
+				opacity: .3;
+			}			
+			@include MQ(L) {
+				text-align: right;
+				position: absolute;
+				top: 300px;
+				left: -180px;
+				width: 150px;
+			}
+		}
+		.blog-content {
+			@include MQ(S) {
+				@include padding(null 2rem null);
+			}
+			@include MQ(M) {
+				@include padding(null 2rem null);
+			}
+			@include MQ(L) {
+				@include padding(null 2rem null);
+			}
+			p:first-of-type::first-letter {
+				initial-letter: 3;
+			}
+		}
+		.blog-back {
+			@include margin(1rem null 1rem 2rem);
+			p {
+				display: inline-block;
+				font-family: $sans-serif;
+				font-weight: 700;
+				font-size: $base-font-size; 
+				padding: 0 auto;
+				margin: auto;
+				line-height: $base-line-height*1.1;
+				a {
+					text-transform: uppercase;
+					padding: .1em .4em;
+					color: $slight-white;
+					display: inline-block;
+					transition: background .15s cubic-bezier(.33,.66,.66,1);
+					background: tint( $nue-black, 20%);
+					opacity: .3;
+				}
+			}
+
+		}
+	}
+}
+
+
+
+
+

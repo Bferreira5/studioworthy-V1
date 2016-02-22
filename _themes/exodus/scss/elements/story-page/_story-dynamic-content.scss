@@ -1,0 +1,231 @@
+.dynamic-content-blog {
+	flex: 1 1 30em;
+	margin: 1em;
+	&:last-of-type {
+		@include align-self(stretch);
+		max-width: 60em;
+	}
+	.copy-box {
+		.copy-img {
+			@include MQ(S) {
+				@include padding(.5rem);
+				border: 1em solid $nue-black;
+			}
+			@include MQ(M) {
+				@include padding(1rem);
+				border: 1em solid $nue-black;
+			}
+			@include MQ(L) {
+				@include padding(2rem);
+				border: 1em solid $nue-black;
+			}
+			a.flex-img {
+				display: block;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				overflow: hidden;
+				height: 100%;
+				width: 100%;
+
+				@include transition(all .5s ease-in-out);
+				&:focus,
+				&:hover {
+					opacity: .8;
+				}
+				@include MQ(S) {
+					min-height: 300px;
+				}
+				@include MQ(M) {
+					min-height: 350px;
+				}
+				@include MQ(L) {
+					min-height: em(425px);
+				}
+			}
+		}
+		.over {
+			position: relative;
+			background-color: $base-body-color;
+			width: 80%;
+			margin: -7rem auto 0;
+			padding: 1em;
+			border-bottom: .5em solid $nue-black;
+		}
+		//page specific placement and size
+		ul.head-tags {
+			text-align: right;
+		}
+		h1.entry-title {
+			@include MQ(S) {
+				font-size: $base-font-size * 1.2;
+			}
+			@include MQ(SM) {
+				font-size: $base-font-size * 1.8;
+			}
+			@include MQ(M) {
+				font-size: $base-font-size * 2;
+			}
+			@include MQ(L) {
+				font-size: $base-font-size * 2;
+			}
+		}
+		p.date {
+			@include margin(.1rem 0 .2rem);
+		}
+		p.excerpt {
+			line-height: $base-line-height * 1;
+			font-size: $base-font-size * .9; 
+			margin-bottom: .5em;
+			span {
+				font-family: $sans-serif;
+				font-weight: 700;
+				font-size: $base-font-size * .9;
+			}
+		}
+		p.author {
+			font-style: italic;
+		}	
+		hr {
+			border-bottom: .3rem solid transparentize($base-font-color, .4);
+			border-left: none;
+			border-right: none;
+			border-top: none;
+			margin: 0 0 .5rem;
+			width: 8rem;
+		}	
+	}
+}	
+
+.dynamic-content-portfolio {
+	$flex-box-gutter: 0;
+	$flex-box-width: 25em;
+	@include clearfix;
+	@include display(flex);
+	@include justify-content(center);
+	@include align-items(stretch);
+	@include flex-wrap(wrap);
+	clear: both;
+	border-top: 2rem solid $nue-black;
+	border-bottom: 2rem solid $nue-black;
+	@include margin(3rem null);
+	@include padding(3rem null);
+
+	@include MQ(S) {
+		@include margin(null null);
+	}
+	@include MQ(M) {
+		@include margin(5em 1rem);
+	}
+	@include MQ(L) {
+		@include margin(5em 2em);
+	}
+
+	article.flex-box {
+		@include transition (all 0.2s ease-in-out);
+		@include flex(1 1 25em);
+		@include align-self(stretch);
+		display: block;
+		margin: $flex-box-gutter;
+
+		.copy-box {
+			border-top: .5rem solid $nue-black;
+			border-right: .5rem solid $nue-black;
+
+			position: relative;
+			padding-bottom: 1.25rem;
+			overflow-y: hidden;
+			overflow-x: hidden;
+				@include MQ(S) {
+					height: 15rem;
+					@include margin(1.25rem 1.25rem 0);
+				}
+				@include MQ(M) {
+					height: 20rem;
+					@include margin(1.25rem 1.25rem 0 0);
+				}
+				@include MQ(L) {
+					height: 25rem;
+					@include margin(1.25rem 1.25rem 0 0);
+				}
+			.copy-img {
+				background-size: cover;
+				background-position-x: 50%;
+				background-position-y: 50%;
+				background-repeat-x: no-repeat;
+				background-repeat-y: no-repeat;
+				width: 100%;
+				@include MQ(S) {
+					height: 15rem;
+				}
+				@include MQ(M) {
+					height: 20rem;
+				}
+				@include MQ(L) {
+					height: 25rem;
+				}
+
+				@include transition(all .5s ease-in-out);
+				&:focus,
+				&:hover {
+					opacity: .8;
+				}
+			}
+			.over {
+				position: absolute;
+				top: 1em;
+				left: 1em;
+				width: 80%;
+				padding: 1rem;
+				background-color: $base-body-color;
+				
+				ul.head-tags {
+					text-align: right;
+				}
+				h1.entry-title {
+					@include MQ(S) {
+						font-size: $base-font-size * 1.2;
+					}
+					@include MQ(SM) {
+						font-size: $base-font-size * 1.8;
+					}
+					@include MQ(M) {
+						font-size: $base-font-size * 2;
+					}
+					@include MQ(L) {
+						font-size: $base-font-size * 2;
+					}
+				}
+				p.date {
+					@include margin(.1rem 0 .2rem);
+				}
+				p.excerpt {
+					line-height: $base-line-height * 1;
+					font-size: $base-font-size * .9; 
+					margin-bottom: .5em;
+					span {
+						font-family: $sans-serif;
+						font-weight: 700;
+						font-size: $base-font-size * .9;
+					}
+				}
+				p.author {
+					font-style: italic;
+				}	
+				hr {
+					border-bottom: .3rem solid transparentize($base-font-color, .4);
+					border-left: none;
+					border-right: none;
+					border-top: none;
+					margin: 0 0 .5rem;
+					width: 8rem;
+				}	
+			}
+		}
+	}
+	article.flex-box.categories-list {
+		&:first-of-type {
+			@include flex(1 25em);
+		}
+	}
+}

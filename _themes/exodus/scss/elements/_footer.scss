@@ -1,0 +1,125 @@
+footer {
+  @include outer-container;
+
+  .bar {
+    @include margin(3rem null);
+    width: 100%;
+    border-top: 1rem solid black;
+  }
+  .content {
+    @include span-columns(12);
+    height: 100%;
+
+    .general {
+      @include MQ(S) {
+        @include span-columns(12 of 12);
+      }
+      @include MQ(M) {
+        @include span-columns(6 of 12);
+      }
+      @include MQ(L) {
+        @include span-columns(4 of 12);
+      }
+      .copy-box {
+        @include margin(2rem 2rem);
+        h3 {
+          @include margin(null null null null);
+        }
+        a.read-more {
+          @include margin(1rem null null null);
+          font-size: $base-font-size * 1.8;
+          line-height: $base-line-height*.6;
+        }
+        form.email-sub {
+          input {
+            color: $slight-white;
+            float: left;
+            margin: 1.5em 1em 0 0;
+            @include MQ(S) {
+             width: 50%;
+            }
+            @include MQ(M) {
+              width: 50%;
+            }
+            @include MQ(L) {
+              width: 50%;
+            }
+          }
+          button {
+            float: left;
+            margin: 1.3em 0 0 0;
+          }
+        }
+      }
+    }
+    .location {
+      @include MQ(S) {
+        @include span-columns(12 of 12);
+      }
+      @include MQ(M) {
+        @include span-columns(6 of 12);
+        @include omega();
+      }
+      @include MQ(L) {
+        @include span-columns(8 of 12);
+        @include omega();
+      }
+      .copy-box {
+        @include margin(2rem 2rem);
+        h3 {
+          @include margin(null null 1rem null);
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          li {
+            list-style: none;
+            font-family: $sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            line-height: $base-line-height;
+            font-size: $base-font-size * 1.1; 
+            @include margin(0);
+          }
+        }
+        
+      }
+    }
+  }
+  .copyright { 
+    .copy-box {
+      @include span-columns(12);
+      @include padding(1rem 1rem);
+      .bottom-cell {
+        @include MQ(S) {
+          @include span-columns(12 of 12);
+          @include pad();
+          @include margin(0);
+          @include padding(0);
+        }
+        @include MQ(M) {
+          @include span-columns(12 of 12);
+          @include pad();
+          @include margin(0);
+          @include padding(0); 
+        }
+        @include MQ(L) {
+          @include span-columns(4 of 12);
+          @include pad();
+          @include margin(0);
+          @include padding(0);
+        }
+        p {
+          font-family: $sans-serif;
+          font-weight: 700;
+          line-height: $base-line-height;
+          font-size: $base-font-size * .9; 
+          @include margin(0);
+          @include padding(1rem 0);
+          text-align: center;
+        }
+      }
+    }
+  }
+}

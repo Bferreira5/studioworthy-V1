@@ -1,0 +1,235 @@
+title: Project
+hide: yes
+
+fields:
+
+  page_title:
+    type: text
+    display: Page Title in Browser
+    instructions: Optional - override the title used above for SEO purposes
+
+  meta_description:
+    type: text
+    display: Meta Description
+
+  tags:
+    type: suggest
+    display: Tags
+    create: false
+    options:
+      - Design
+      - Code
+      - Planning
+    taxonomy:
+      folder: selected-work
+      label: title
+      value: url
+
+  thumbnail_section:
+    type: section
+    display: Thumbnail Content Section
+    instructions: Change projects thunbnail image and caption.
+
+  thumbnail_img_src:
+    type: file
+    display: Upload Thumbnail Image
+    instructions: PNG, JPG or GIF sized 1000px x 1000px
+    allowed: ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG', 'gif', 'GIF']
+    destination: assets/img/projects/thumb/
+    show_thumbnail: true
+    required: true
+
+  caption:
+    type: limited
+    limit: 160
+    display: Thumbnail Copy
+    instructions: enter text to limit
+
+  fixed_section:
+    type: section
+    display: Fixed Content Section
+    instructions: Change projects featured images and text, including dates, project name, subtitle, and summery.
+
+  hero_image:
+    type: grid
+    display: 
+    starting_rows: 1
+    fields:
+      hero_img_src:
+        display: Upload Hero Image
+        instructions: PNG, JPG or GIF sized 1600px x 1000px Min (currently using 3333 x 2083 retina at 72dpi)
+        type: file
+        allowed: ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG', 'gif', 'GIF']
+        destination: assets/img/projects/
+        width: 25%
+      alt_text:
+        display: Caption Text
+        type: text
+        width: 75%
+
+  project_date:
+    display: Date of Project Started
+    type: date
+
+  subtitle:
+    type: text
+    display: Subtitle Text
+
+  caption:
+    type: limited
+    limit: 160
+    display: Thumbnail Copy
+    instructions: enter text to limit
+
+  timeline_grid:
+    type: grid
+    display: Timeline
+    starting_rows: 3
+    fields:
+      timeline_date:
+        display: Date
+        type: date
+        width: 25%
+      timeline_event:
+        display: Event title
+        type: text
+        width: 25%
+      timeline_description:
+        display: Description
+        type: textarea
+        width: 50%
+
+  dynamic_section:
+    type: section
+    display: Dynamic Content Section
+    instructions: Rearrange types of content to your liking, including its order in the stack.
+
+  project_content:
+      type: replicator
+      display: Arrange and Display project details.
+      instructions: Replicate a new set for each piece of content you need.
+
+      sets:
+
+        table_set:
+          display: Table
+          instructions: Add a inline table.
+          fields:
+            table_header:
+              type: text
+              instructions: Headline or section title.
+            inline_table:
+              type: table
+              instructions: Add data here.
+
+
+        headline_set:
+          display: Large Headline Title
+          instructions: large headline
+          fields:
+            headline:
+              type: text
+              instructions: Headline or section title.
+
+        image_callout_set:
+          display: Full width image with copy-box
+          instructions: Build out the block.
+          fields:
+            background:
+              type: file
+              instructions: PNG, JPG or GIF sized 1600px x 1000px Min (currently using 3333 x 2083 retina at 72dpi)
+              allowed: ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG', 'gif', 'GIF']
+              destination: assets/img/projects/
+            position:
+              display: Copy box prestyled select
+              type: select
+              options:
+                left: left alignment
+                right: right alignment
+            text:
+              type: limited
+              limit: 180
+              instructions: enter text to limit
+
+        content_set:
+          display: Content
+          instructions: A basic block of text
+          fields:
+            text:
+              type: markitup
+              display: Mark It Up!
+              image_dir: assets/img/projects/
+              file_dir: assets/files/
+
+        client_stamp_set:
+          display: Client information
+          instructions: Add the clientele and date project started.
+          fields:
+            job:
+              type: text
+              instructions: Job title.
+            time:
+              type: text
+              instructions: Type a date range (1989-2015).
+            employer:
+              type: text
+              instructions: Company or Person.
+            description:
+              type: textarea
+              height: 140
+              instructions: A short description.
+
+        quote_set:
+          display: Quote
+          instructions: A lovely pullquote
+          fields:
+            quote:
+              type: textarea
+              height: 40
+              instructions: What was said?
+            cite:
+              type: text
+              instructions: Who said it?
+
+        image_set:
+          display: Image
+          instructions: Showcase your adventures in a gallery
+          fields:
+            photo:
+              type: file
+              instructions: PNG, JPG or GIF sized 1600px x 1000px Min (currently using 3333 x 2083 retina at 72dpi)
+              allowed: ['png', 'jpg', 'jpeg', 'PNG', 'JPG', 'JPEG', 'gif', 'GIF']
+              destination: assets/img/projects/
+
+        video_set:
+          display: video
+          instructions: 
+          fields:
+            video_provider:
+              display: Video Sources
+              type: select
+              options:
+                youtube: Youtube
+                vimeo: Vimeo 
+            video_link:
+              type: text
+              instructions: Add video src link her
+
+        code_set:
+          display: Code Snippets
+          type: textarea
+          instructions: For embedding videos or whatever else you might need, see sample code here - typeandgrids.com/reference/video.txt
+          fields:
+            code:
+              type: textarea
+              height: 400
+              code_formating:
+              instructions: to be styled with "code"
+
+
+  content:
+    type: hidden    
+
+  _template:
+    type: hidden
+    default: project

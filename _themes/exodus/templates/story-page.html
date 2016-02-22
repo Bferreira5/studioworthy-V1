@@ -1,0 +1,294 @@
+{{ front_page_replicator }}
+
+	{{ if type == "headline_set" }}
+	<div class="grid">
+		<!-- Grid headline -->
+		<section style="background-image: url('{{ background }}'); background-repeat: no-repeat; background-position: center; background-size: cover;" class="grid-item grid-item-headline {{ styled }}">
+			<div class="copy-internal">
+				<div class="copy-box">
+					<div class="copy-content">
+						<div class="copy-headline">
+							<h1>{{ headline }}</h1>
+						</div>
+						<div class="copy-detail">
+							<p>{{ text }}</p>
+							<div class="headline-pattern"></div>
+						</div>
+
+						<div class="copy-ornament">
+						{{ if arrow == "none" }}
+						{{ elseif arrow == "up" }}
+							<p></p>
+							<a class="arrow" href="{{ scroll-to }}">&#8638;</a>
+						{{ elseif arrow == "down" }}
+							<a class="arrow" href="{{ scroll-to }}">&#8642;</a>
+						{{ endif }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Grid headline end -->
+	</div>
+
+	{{ elseif type == "grid_movable_type_set" }}
+	<div class="grid">
+		<!-- Grid Movable Type -->
+		<section class="grid-item grid-movable-type {{ styled }}">
+			<div class="copy-internal">
+				<div class="copy-box border-outline">
+					<div class="copy-headline">
+						<h2>{{ headline }}</h2>
+					</div>
+					<div class="copy-detail">
+						<h1 class="cd-headline letters type">
+							{{ html }}
+						</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Grid Movable Type end -->
+	</div>
+
+	{{ elseif type == "content_set" }}
+	<div class="grid">
+		<!-- Grid content -->
+		<section class="grid-item grid-item-content {{ styled }}">
+			<div class="copy-internal">
+				<div class="copy-box border-outline">
+					<div class="copy-detail">
+						{{ text|markdown }}
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Grid content end -->	
+	</div>
+
+	{{ elseif type == "grid_side_burst_set" }}
+	<div class="grid">
+		<!-- Grid side burst -->
+		<section style="background-image: url('{{ background }}'); background-repeat: no-repeat; background-position: center; " class="grid-item grid-side-burst {{ styled }} ">
+			<div class="copy-internal">
+				<div class="copy-box border-outline {{ position }}">
+				{{ if shape == "big-text" }}
+					<div class="copy-detail big-text">
+						<p>{{ text }}</p>
+						<hr/>
+					</div>
+				{{ elseif shape == "with-cta" }}
+					{{ if headline }}
+					<div class="copy-headline with-cta">
+						<h2>{{ headline }}</h2>
+					</div>
+					{{ endif }}
+					{{ if text }}
+					<div class="copy-detail with-cta">
+						<p>{{ text }}</p>
+						<hr/>
+					</div>
+					{{ endif }}
+					{{ if cta-text }}
+					<div class="copy-cta">
+						<div class="cta-content">
+							<p>{{ cta-text }}</p>
+						</div>
+						<div class="cta-link">
+							<a class="link-cta cta-button" href="{{ link }}">{{ linktext }}</a>
+						</div>
+					</div>
+					{{ endif }}
+				{{ endif }}
+				</div>
+			</div>
+		</section>
+		<!-- Grid side burst end -->
+	</div>
+
+	{{ elseif type == "grid_bar_set" }}
+ 	<div class="grid">
+		<!-- Grid bar -->
+		<section style="background-image: url('{{ background }}'); background-repeat: no-repeat; background-size: cover;" class="grid-item grid-item-bar {{ styled }}">
+			<div class="copy-internal">
+				<div class="copy-box border-outline {{ position }}">
+					{{ if shape == "big-text" }}
+						<div class="copy-detail big-text">
+							<p>{{ text }}</p>
+							<hr/>
+						</div>
+					{{ elseif shape == "with-cta" }}
+						{{ if headline }}
+						<div class="copy-headline with-cta">
+							<h2>{{ headline }}</h2>
+						</div>
+						{{ endif }}
+						{{ if text }}
+						<div class="copy-detail with-cta">
+							<p>{{ text }}</p>
+							<hr/>
+						</div>
+						{{ endif }}
+						{{ if cta-text }}
+						<div class="copy-cta">
+							<div class="cta-content">
+								<p>{{ cta-text }}</p>
+							</div>
+							<div class="cta-link">
+								<a class="link-cta cta-button" href="{{ link }}">{{ linktext }}</a>
+							</div>
+						</div>
+						{{ endif }}
+					{{ endif }}
+				</div>
+			</div>
+		</section>
+		<!-- Grid bar end -->
+	</div>
+
+	{{ elseif type == "grid_module_set" }}
+	<div class="grid">
+		{{ grid_field }}
+		<section style="background-image: url('{{ background }}'); background-repeat: no-repeat; background-position: center; background-size: cover;" class="grid-module {{ if shape == "image" }} borderless {{ endif }}"  >
+			<div class="copy-internal">
+				{{ if shape == "big-text" }}
+				<div class="copy-box">
+					<div class="copy-detail big-text">
+						<p>{{ text }}</p>
+						<hr/>
+					</div>
+				</div>
+				{{ elseif shape == "with-cta" }}
+				<div class="copy-box">
+					{{ if headline }}
+					<div class="copy-headline with-cta">
+						<h2>{{ headline }}</h2>
+					</div>
+					{{ endif }}
+					{{ if text }}
+					<div class="copy-detail with-cta">
+						<p>{{ text }}</p>
+						<hr/>
+					</div>
+					{{ endif }}
+					{{ if cta-text }}
+					<div class="copy-cta">
+						<div class="cta-content">
+							<p>{{ cta-text }}</p>
+						</div>
+						<div class="cta-link">
+							<a class="link-cta cta-button" href="{{ link }}">{{ linktext }}</a>
+						</div>
+					</div>
+					{{ endif }}
+				</div>
+				{{ endif }}
+			</div>
+		</section>
+		{{ /grid_field }}
+		<!-- Grid Left end -->
+	</div>
+
+	{{ elseif type == "grid_bulletpoint_set" }}
+	<div class="grid-bullets">
+		{{ grid_field }}
+		<section class="grid-bulletpoint">
+			<div class="copy-internal">
+				<div class="copy-box">
+					{{ if icon }}
+					<img src="{{ icon }}" alt="">
+					{{ endif }}
+					<h2>{{ headline }}</h2>
+					<p>{{ text }}</p>
+					{{ if linktext }}
+						<a class="normal" href="{{ link }}">{{ linktext }}</a>
+					{{ endif }}
+				</div>
+			</div>
+		</section>
+		{{ /grid_field }}
+		<!-- Grid Left end -->
+	</div>
+
+	{{ elseif type == "grid_dynamic_blog_set" }}
+	<div class="grid-dynamic">
+		{{ relate:featured folder="blog" }}
+		<section class="dynamic-content-blog">
+			<div class="copy-box">
+				<div class="copy-img">
+					<a class="flex-img" style="background-image: url('{{ thumbnail_img_src }}')" href="/blog/{{ slug }}">
+					</a>
+				</div>
+				<div class="over">
+					{{ if categories|length > 0 }}
+					<ul class="head-tags">
+						{{ get_content from="/blog" }}
+						<li class="head-label">{{ copy_blog_tags }}:</li>
+						{{ /get_content }} 
+							{{ categories }}
+								<li class="head-tag"><a href="/blog/categories/{{ value }}">{{ value }}</a></li>
+							{{ /categories }}
+					</ul>
+					{{ endif }}
+						<h1 class="entry-title"><a href="{{ url }}">{{ title }}</a></h1>
+						<p class="date">{{ date }}</p>
+						<hr>
+						<p class="excerpt">{{ excerpt|truncate:250 }}</p>
+						{{ if copy_blog_read_more }}
+							<a class="read-more" href="{{ url }}">{{ copy_blog_read_more }}</a>
+						{{ endif }}
+				</div>
+			</div>
+		</section>
+		{{ /relate:featured }}
+	</div>
+
+	{{ elseif type == "grid_dynamic_portfolio_set" }}
+	<div class="dynamic-content-portfolio">
+		{{ relate:featured folder="selected-work" }}
+			<article class="flex-box">
+				<div class="copy-box">
+					<a href="{{ url }}">
+						<div class="copy-img" style="background-image: url('{{ thumbnail_img_src }}')"></div>
+					</a>
+					<div class="over">
+						{{ if categories|length > 0 }}
+						<ul class="head-tags">
+							{{ get_content from="/{{ segment_1 }}" }}
+							<li class="head-label">{{ copy_portfolio_tags }}:</li>
+							{{ /get_content }} 
+								{{ categories }}
+									<li class="head-tag"><a href="#">{{ value }}</a></li>
+								{{ /categories }}
+						</ul>
+						{{ endif }}
+							<h1 class="entry-title"><a href="{{ url }}">{{ title }}</a></h1>
+							<p class="date">{{ date }}</p>
+							<hr>
+							<p class="excerpt">{{ caption }}</p>
+							{{ if copy_cta_read_more }}
+								<a class="read-more" href="{{ url }}">{{ copy_cta_read_more }}</a>
+							{{ endif }}
+					</div>
+				</div>
+			</article>
+		{{ /relate:featured }}
+	</div>
+	
+	{{ elseif type == "map" }}
+		<!-- zone map -->
+		{{ if hide_map }}
+		<section class="grid-item">
+			<div href="javascript:void(0)" class="grid-item grid-item-bar">
+				<div id="map_canvas"></div>
+			</div>
+		</section>
+		<!--  map end -->
+		{{ endif }}
+
+	{{ endif }}
+
+{{ /front_page_replicator }}
+
+<!-- close-->
+

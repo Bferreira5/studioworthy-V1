@@ -1,0 +1,35 @@
+{{ theme:partial src="_portfolio_top" }}
+<section class="portfolio-listing">
+	<div class="flex-listing">
+	
+		{{ entries:listing folder="selected-work" limit="{ num_blog_posts_per_page }" taxonomy="true" }}
+		<article class="flex-box">
+			<div class="copy-box">
+				<a href="/{{ segment_1 }}/{{ slug }}">
+					<div class="copy-img" style="background-image: url('{{ thumbnail_img_src }}')"></div>
+				</a>
+				<div class="over">
+					{{ if tags|length > 0 }}
+					<ul class="head-tags">
+						{{ get_content from="/{{ segment_1 }}" }}
+						<li class="head-label">{{ copy_portfolio_tags }}:</li>
+						{{ /get_content }} 
+							{{ tags }}
+								<li class="head-tag"><a href="/{{ segment_1 }}/tags/{{ value }}">{{ value }}</a></li>
+							{{ /tags }}
+					</ul>
+					{{ endif }}
+						<h1 class="entry-title"><a href="{{ url }}">{{ title }}</a></h1>
+						<p class="date">{{ date }}</p>
+						<hr>
+						<p class="excerpt">{{ caption }}</p>
+						{{ if copy_portfolio_read_more }}
+							<a class="read-more" href="{{ url }}">{{ copy_portfolio_read_more }}</a>
+						{{ endif }}
+				</div>
+			</div>
+		</article>
+		{{ /entries:listing }}
+	</div>
+</section>
+{{ theme:partial src="_blog_bottom" }}

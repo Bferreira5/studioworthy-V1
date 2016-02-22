@@ -1,0 +1,132 @@
+$sliding-menu-border-color: lighten($base-font-color, 70);
+$sliding-menu-background: transparentize($base-body-color, 0.03);
+$sliding-menu-color:  lighten($base-font-color, 50);
+$sliding-menu-border: 1px solid $sliding-menu-border-color;
+$sliding-menu-background-hover: $base-accent-color;
+$sliding-menu-color-hover: lighten($base-font-color, 77);
+
+#layout, #menu, .menu-link {
+  @include transition(all .5s $ease-out-quad);
+}
+
+#layout {
+
+  &.active {
+    left: 250px;
+    #menu {
+      left: 250px;
+      width: 250px;
+    }
+    .menu-link {
+      left: 250px;
+    }
+  }
+}
+
+#menu {
+  background: $sliding-menu-background;
+  margin-left: -250px;
+  padding-top: em(72px);
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 200;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  border-right: 1px solid $light-gray;
+
+  
+  .pure-menu {
+    background: transparent;
+
+    ul {
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid $sliding-menu-border-color;
+    
+      li {
+        text-align: left;
+        border-top: 1px solid $sliding-menu-border-color;
+        
+        .current {
+            background: $sliding-menu-color-hover;
+            color: darken($sliding-menu-color-hover, 50);
+          }
+
+        .sub-nav {
+
+          li {
+            background: lighten($sliding-menu-color, 27);
+          }
+
+          a {
+            text-indent: em(30px);
+            text-transform: uppercase;
+            line-height: 50px;
+          }
+        }
+        
+        a {
+          height: 49px;
+          display: block;
+          text-indent: em(20px);
+          letter-spacing: 2px;
+          color: $sliding-menu-color;
+          border: none;
+          text-transform: uppercase;
+          line-height: 50px;
+          
+          &:hover, &:focus {
+            background: $sliding-menu-color-hover;
+            color: darken($sliding-menu-color-hover, 50);
+          }
+
+
+        }
+      }
+    }
+  
+    a.pure-menu-heading {
+      margin-top: .3em;
+      margin-bottom: .3em;
+      text-align: center;
+      display: block;
+      letter-spacing: 2px;
+      color: darken($sliding-menu-color-hover, 50);
+    }
+  }
+}
+
+.menu-link {
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  z-index: 210;
+  padding: 1.7em 1.5em;
+
+}
+  .burger-icon {
+    @include burger(50px, 6px, 10px, $action-color);
+  }
+  .menu-link.is-active .burger-icon {
+      @include burger-to-cross;
+  }
+
+
+@media (min-width: 60em) {
+  #menu {
+    left: 250px;
+  }
+  .menu-link {
+    position: fixed;
+    left: 250px;
+    display: none;
+  }
+  #layout.active .menu-link { 
+    left: 250px;
+  }
+}
+

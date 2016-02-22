@@ -1,0 +1,4 @@
+    {{ if title != 'Home' AND title != '' }}{{ title }} | {{ endif }}
+    {{ if taxonomy_name }}{{ taxonomy_name|title }} | {{ endif }}
+    {{ if get:page }}Page {{ get:page }} | {{ endif }}
+    {{ _site_name }}{{ if title == 'Home' }}: {{ _site_tagline }}{{ endif }}

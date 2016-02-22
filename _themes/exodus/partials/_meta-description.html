@@ -1,0 +1,1 @@
+{{ if taxonomy_slug }}{{ get_content from="/{ segment_1 }" }}{{ copy_blog_categories_title }}{{ /get_content }} {{ taxonomy_slug|deslugify|title }}{{ else }}{{ meta_description }}{{ if get:page > 0 }}, page {{ get:page }}{{ endif }}{{ endif }}

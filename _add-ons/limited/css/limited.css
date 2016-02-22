@@ -1,0 +1,12 @@
+.input-limited .limited-container div:nth-child(1) {
+  display: inline !important;
+}
+.wChar {
+  position: absolute;
+  background: #bf1d2d;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  top: -45px !important;
+}
+

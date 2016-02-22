@@ -1,0 +1,38 @@
+//////////// General Content style agnostic
+	.grid-item-content {
+		@include MQ(S) {
+			@include margin(4rem auto);
+			@include padding(0);
+		}
+		@include MQ(M) {
+			@include margin(6rem auto);
+			@include padding(0);
+		}
+		@include MQ(L) {
+			@include margin(6rem auto);
+			@include padding(0);
+		}
+		@include pattern-one;
+
+		.copy-internal {
+			max-width: rem(900px);
+			margin: auto;
+			.copy-box {
+				@include MQ(S) {
+					@include padding(3rem 1.5em);
+				}
+				@include MQ(SM) {
+					@include padding(3rem 2em);
+				}
+				@include MQ(M) {
+					@include padding(5rem auto);
+				}
+				@include MQ(L) {
+					@include padding(5rem auto);
+				}
+				.copy-detail {
+
+				}	
+			}
+		}
+	}

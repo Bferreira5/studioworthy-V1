@@ -1,0 +1,23 @@
+{{ if segment_1 == "blog" && segment_2 }}
+<meta name="twitter:card" content="summary_large_image">
+
+{{ else }}
+<meta name="twitter:card" content="summary">
+{{ endif }}
+
+
+<meta name="twitter:site" content="@example">
+<meta name="twitter:title" content="{{ theme:partial src="_page-title" }}">
+<meta name="twitter:description" content="{{ theme:partial src="_meta-description" }}">
+<meta name="twitter:creator" content="@example">
+
+
+{{ if segment_1 == "blog" && segment_2 }}
+<meta name="twitter:image:src" content="{{ _site_url }}/assets/blog/og/hawthorne-{{ date format="Y-m-d" }}.png">
+
+{{ else }}
+<meta name="twitter:image:src" content="{{ _site_url }}/assets/img/hawthorne-300x300.png">
+{{ endif }}
+
+
+<meta name="twitter:domain" content="example.com">

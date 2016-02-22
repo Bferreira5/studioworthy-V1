@@ -1,0 +1,78 @@
+// rem fallback - credits: http://zerosixthree.se/
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// center vertically and/or horizontally an absolute positioned element
+
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// .element p {
+//  @include vertical-align;
+// }
+
+// border radius
+
+@mixin border-radius($radius:.25em) {
+  border-radius: $radius;
+}
+
+// antialiasing mode font rendering
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin pattern-one {
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(250,63,44,.15), rgba(250,63,44,.15) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(250,63,44,.15), rgba(250,63,44,.15) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(250,63,44,.15), rgba(250,63,44,.15) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(250,63,44,.15), rgba(250,63,44,.15) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 6px 6px;
+  -moz-background-size: 6px 6px;
+  background-size: 6px 6px;
+}
+
+@mixin pattern-two {
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(255,255,255,.9), rgba(255,255,255,.9) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(255,255,255,.9), rgba(255,255,255,.9) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(255,255,255,.9), rgba(255,255,255,.9) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(255,255,255,.9), rgba(255,255,255,.9) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 6px 6px;
+  -moz-background-size: 6px 6px;
+  background-size: 6px 6px;
+}

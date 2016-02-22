@@ -1,0 +1,16 @@
+.datepicker {
+  /* TODO: Should modify this in the js */
+  z-index: 2147483647 !important;
+}
+input.multidate {
+  max-width: 98%;
+}
+.input-multidate .datepicker:before {
+  content: none;
+}
+.input-multidate .datepicker td {
+  border-radius: 0;
+}
+.input-multidate .well {
+  min-height: 300px;
+}

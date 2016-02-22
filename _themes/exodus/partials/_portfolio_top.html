@@ -1,0 +1,31 @@
+<section class="portfolio-top">
+	<div class="taxonomy-bar">
+		<div class="dropdown">
+			<div class="dropdown-container">
+				<p class="dropdown-description">Project</p>
+				<p class="dropdown-button">{{ get_content from="/{ segment_1 }" }}{{ copy_portfolio_tags_title }}{{ /get_content }} {{ taxonomy_slug|deslugify|title }}</p>
+				<ul class="dropdown-menu dropdown-select">
+					{{ taxonomy:listing folder="selected-work" type="tags" sort_by="name" sort_dir="asc" }}
+					<li>
+						<a class="dropdown-tag" href="{{ url }}"><span>
+						{{ name|title }} ({{ results }})
+						</span>
+						</a>
+					</li>
+				{{ /taxonomy:listing }}
+				<!--
+				{{ if copy_blog_archive }}
+					<li>
+						<a class="dropdown-tag" href="/{{ segment_1 }}/{{ blog_archive_url_segment }}">
+						{{ copy_blog_archive }}</a>
+					</li>
+				{{ endif }}
+				-->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="taxonomy-title">
+		<h1>{{ taxonomy_slug|deslugify|title }}</h1>
+	</div>
+</section>

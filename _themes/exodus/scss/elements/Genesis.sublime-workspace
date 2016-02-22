@@ -1,0 +1,592 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"light",
+				"light-gray"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"tex",
+				"text-align-last"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"bas",
+				"base-font-color"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"bord",
+				"border-top"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"head",
+				"header	Tag"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"su",
+				"Subheadline"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"l",
+				"line-height"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"s",
+				"style	Attr"
+			],
+			[
+				"top",
+				"margin-top"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"f",
+				"font-weight"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"RG",
+				"rgba()"
+			],
+			[
+				"images",
+				"images_dir"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"PACK",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: Package Control Settings – Default"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_cache/_app",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_config",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_config/users",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_content",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_content/selected-work",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/img",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/js",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/js/min",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/layouts",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/assets",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/assets/img",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/bower_components/jquery"
+	],
+	"file_history":
+	[
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_config/settings.yaml",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/layouts/default.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/partials/_footer.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/3ab65383f098728ac887bc6a3e12b3e878ae951c/nbsda.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/3ab65383f098728ac887bc6a3e12b3e878ae951c/victor.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_article.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_blog-listing.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_bullets.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_clear-grid.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_comments.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_events.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_footer.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_grid-items.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_header.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_hero.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_images.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_modal.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_nav.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_page-gallery.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_page-header.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/5f52c779dd30bedbf77a53affc2d6447323a8071/_video.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/8330bf74274ece50d67c84a741e9ce253eb5f9b1/_base.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/8330bf74274ece50d67c84a741e9ce253eb5f9b1/_button.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/9d16c9081d64eaf97c824073cc2eb41bd262c2c2/_bitters.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/9d16c9081d64eaf97c824073cc2eb41bd262c2c2/_flashes.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/9d16c9081d64eaf97c824073cc2eb41bd262c2c2/_forms.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/9d16c9081d64eaf97c824073cc2eb41bd262c2c2/_grid-settings.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/9d16c9081d64eaf97c824073cc2eb41bd262c2c2/_lists.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/9d16c9081d64eaf97c824073cc2eb41bd262c2c2/_tables.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/9d16c9081d64eaf97c824073cc2eb41bd262c2c2/_typography.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/9d16c9081d64eaf97c824073cc2eb41bd262c2c2/_variables.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/b247673bf3fb920c3326c953d999653625831db5/_base.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/scss/.sass-cache/b247673bf3fb920c3326c953d999653625831db5/_flash.scssc",
+		"/Users/benjaminferreira/HotFiles/WEB/Genesis/_themes/genesis/css/genesis.css",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/elements/_clear-grid.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_config/fieldsets/events.yaml",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/elements/_events.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/nbsda.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/elements/_images.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/templates/project-detail.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/templates/page-gallery.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/templates/event-detail.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/templates/event-overview.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/elements/_page-gallery.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/selected-work/page.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/page.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/03-calendar/page.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/02-blog/page.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/02-blog/archive/page.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/03-calendar/2014-02-12-elk-spotting.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/03-calendar/page.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_config/fieldsets/event-overview.yaml",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/selected-work/01.logos-and-such.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/templates/page-sidebar.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/templates/page-detail.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_config/fieldsets/page-gallery.yaml",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/03-events/fields.yaml",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_config/fieldsets/project.yaml",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/partials/_events.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_config/fieldsets/event-overview",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/templates/event_overview.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_config/fieldsets/page-2col.yaml",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_config/fieldsets/page-1col.yaml",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/elements/_article.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/elements/_bullets.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/bitters/_typography.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/bitters/_variables.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/templates/blog-archive.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/templates/categories.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/elements/_nav.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/elements/_blog-listing.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/templates/blog.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/partials/_blog_bottom.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/templates/blog-post.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/partials/_blog_top.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/elements/_header.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_config/fieldsets/blog-post.yaml",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_config/fieldsets/blog.yaml",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/2-blog/2014-09-01-Blog-11.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/2-blog/2014-09-02-Blog-12.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/2-blog/2014-09-03-Blog-13.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/2-blog/2014-09-11-test.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/partials/_nav.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_config/fieldsets/page-sidebar.yaml",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/2-blog/archive/page.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/2-blog/page.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/elements/_hero.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/elements/_page-header.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/01-about/page.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_content/2-blog/2014-08-26-welcome-to-our-church.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/partials/_footer.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/scss/elements/_grid-items.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/partials/_header.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/templates/default.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/layouts/default.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/js/jquery.js",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/js/jquery.min.js",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_themes/nbsda/js/nbsda.js",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_config/environments/live.yaml",
+		"/Users/benjaminferreira/HotFiles/WEB/Church/New-Bedford-SDA-Church-Website/_config/settings.yaml",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/scss/bitters/_variables.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/scss/elements/_nav.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/scss/elements/_header.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/scss/elements/_article.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/scss/alpha.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/templates/feed.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/index.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/templates/page-sidebar.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/templates/blog-archive.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/templates/about.php",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/partials/_open-graph.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/partials/_blog_partial.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/partials/_nav.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/templates/categories.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/templates/default.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/templates/page-gallery.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/partials/_header.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/templates/categories-all.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_content/3-blog/categories/page.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_content/3-blog/page.md",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/templates/project-detail.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/templates/blog-post.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/layouts/default.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/templates/categories-list.html",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/scss/bitters/_grid-settings.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/scss/bitters/_bitters.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/scss/bitters/reset.scss",
+		"/Users/benjaminferreira/HotFiles/WEB/Pure_Template/Alpha-Statamic/_themes/alpha/scss/_reset.scss"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"nbsda",
+			"project-detail",
+			"project",
+			"segment_1",
+			"clearfix",
+			".blog-listing ",
+			"project_info",
+			"grid-item-colors",
+			"centered-navigation",
+			"segment_1",
+			"theme:js",
+			"content",
+			"home-title",
+			"image",
+			"cards",
+			"card",
+			"desktop",
+			"br",
+			"hr",
+			"box_50",
+			"font-weight: 300",
+			"grey",
+			"email",
+			"display:",
+			"body",
+			"main_bg;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"genesis",
+			"event",
+			"quick_info",
+			"top-bar",
+			"box",
+			"",
+			"box"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.5,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 102.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 221.0
+	},
+	"project": "/Users/benjaminferreira/HotFiles/WEB/Projects/Genesis.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/HotFiles/WEB/Projects/Pure-Static.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 2,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 256.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

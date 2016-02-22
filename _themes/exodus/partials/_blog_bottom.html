@@ -1,0 +1,37 @@
+{{ entries:pagination folder="blog" limit="{ 1 }" }}
+	{{ if total_pages > 1 }}
+	<section class="blog-pagination">
+		<nav>
+			<div class="pagination-left">
+				{{ if previous_page }}
+				<a href="{{ previous_page }}">
+				{{ get_content from="/blog" }}
+				&larr; {{ copy_prev }}</a>
+				{{ /get_content }}
+				{{ else }}
+				<span class="empty-tag">
+				{{ get_content from="/blog" }}
+				&larr; {{ copy_prev }}
+				</span>
+				{{ /get_content }}
+				{{ endif }}
+			</div>					
+			<div class="pagination-right">
+				{{ if next_page }}
+				<a href="{{ next_page }}">
+				{{ get_content from="/blog" }}
+					{{ copy_next }} &rarr;
+				</a>
+				{{ /get_content }}
+				{{ else }}
+				<span class="empty-tag">
+				{{ get_content from="/blog" }}
+					{{ copy_next }} &rarr;
+				</span>
+				{{ /get_content }}
+				{{ endif }}
+			</div>
+		</nav>
+	</section>
+	{{ endif }}
+{{ /entries:pagination }}

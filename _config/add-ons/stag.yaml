@@ -1,0 +1,37 @@
+servers:
+  exodus: # The name of the server to use with stag
+    host: studioworthy.com # The host to ssh into
+    webroot: /var/www/exodus # The webroot of your site
+    user: benjamin # SSH username
+    # password: # DEPRECATED: Please use ftp_password
+    # ftp_password: # Your FTP password; Only if you're using ftp
+    port: 22 # SSH port; Don't need it if it's the default
+    forward_agent: true # Recommended if you're using git for deployments
+    strategy: git # You can set this to git, rsync or ftp
+    repo_url: git@github.com:Bferreira5/exodus.git # If using git as your strategy, set the ssh repo url
+
+    deploy:
+      pull_content_before: true
+      clear_cache_after: true
+      set_permissions_after: true
+      update_submodules: false
+
+  pull_content:
+    commit_message: "Content update from production"
+    content_directories: 
+      - _content
+      - assets
+
+clear_cache:
+  directories:
+    - _app
+    - _add-ons
+
+set_permissions:
+  site_permissions: 775 # This will be run first on the whole site directory
+  writable_permissions: 775 # Will be run after to set the writable directories
+  writable_directories: # A list of the writable directories; Statamic defaults
+    - _cache
+    - _content
+    - _logs
+    - _config/users

@@ -1,0 +1,148 @@
+///// Portfolio
+section.portfolio-top {
+	@include outer-container;
+	.taxonomy-bar {
+		@include margin(6rem null null null);
+		@include span-columns(12);
+	}		
+}
+section.portfolio-listing {
+
+	.flex-listing {
+		$flex-box-gutter: 0;
+		$flex-box-width: 40rem;
+		@include clearfix;
+		@include display(flex);
+		@include justify-content(center);
+		@include align-items(stretch);
+		@include flex-wrap(wrap);
+		clear: both;
+		@include MQ(S) {
+			@include margin(null null);
+		}
+		@include MQ(M) {
+			@include margin(5em 1rem);
+		}
+		@include MQ(L) {
+			@include margin(5em 2em);
+		}
+
+		article.flex-box {
+			@include transition (all 0.2s ease-in-out);
+			
+			@include align-self(stretch);
+			display: block;
+			margin: $flex-box-gutter;
+			@include MQ(S) {
+				@include flex(1 1 25rem);
+			}
+			@include MQ(M) {
+				@include flex(1 1 25rem);;
+			}
+			@include MQ(L) {
+				@include flex(1 1 50rem);
+			}
+
+			.copy-box {
+				border-top: 1rem solid $nue-black;
+				border-right: 1rem solid $nue-black;
+
+				position: relative;
+				padding-bottom: 1.25rem;
+				overflow-y: hidden;
+				overflow-x: hidden;
+					@include MQ(S) {
+						height: 25rem;
+						@include margin(1.25rem 1.25rem 0);
+					}
+					@include MQ(M) {
+						height: 25rem;
+						@include margin(1.25rem 1.25rem 0 0);
+					}
+					@include MQ(L) {
+						height: 50rem;
+						@include margin(1.25rem 1.25rem 0 0);
+					}
+				.copy-img {
+					background-size: cover;
+					background-position-x: 50%;
+					background-position-y: 50%;
+					background-repeat-x: no-repeat;
+					background-repeat-y: no-repeat;
+					width: 100%;
+					@include MQ(S) {
+						height: 25rem;
+					}
+					@include MQ(M) {
+						height: 25rem;
+					}
+					@include MQ(L) {
+						height: 50rem;
+					}
+
+					@include transition(all .5s ease-in-out);
+					&:focus,
+					&:hover {
+						opacity: .8;
+					}
+				}
+				.over {
+					position: absolute;
+					top: 1em;
+					left: 1em;
+					width: 80%;
+					max-width: rem(600px);
+					padding: 1rem;
+					background-color: rgba($base-body-color, .9);
+					
+					ul.head-tags {
+						text-align: right;
+					}
+					h1.entry-title {
+						@include MQ(S) {
+							font-size: $base-font-size * 1.2;
+						}
+						@include MQ(SM) {
+							font-size: $base-font-size * 1.8;
+						}
+						@include MQ(M) {
+							font-size: $base-font-size * 2;
+						}
+						@include MQ(L) {
+							font-size: $base-font-size * 2;
+						}
+					}
+					p.date {
+						@include margin(.1rem 0 .2rem);
+					}
+					p.excerpt {
+						line-height: $base-line-height * 1;
+						font-size: $base-font-size * .9; 
+						margin-bottom: .5em;
+						span {
+							font-family: $sans-serif;
+							font-weight: 700;
+							font-size: $base-font-size * .9;
+						}
+					}
+					p.author {
+						font-style: italic;
+					}	
+					hr {
+						border-bottom: .3rem solid transparentize($base-font-color, .4);
+						border-left: none;
+						border-right: none;
+						border-top: none;
+						margin: 0 0 .5rem;
+						width: 8rem;
+					}	
+				}
+			}
+		}
+		article.flex-box.categories-list {
+			&:first-of-type {
+				@include flex(1 25em);
+			}
+		}
+	}
+}

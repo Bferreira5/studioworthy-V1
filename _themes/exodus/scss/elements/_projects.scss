@@ -1,0 +1,586 @@
+.project {
+	@include outer-container;
+	.hero-image {
+		min-height: rem(400px);
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		overflow: hidden;
+		.copy-inside {
+			display: table;
+			min-height: rem(320px);
+   			height: 100vh;
+
+			.copy-box {
+				display: table-cell;
+   				vertical-align: bottom;
+				@include MQ(S) {
+					padding: 1em;
+					h1 {
+						line-height: 2.35rem;
+						span {
+							background: $slight-white;
+							@include padding(0 .5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+					h2 {
+						line-height: 2.35rem;
+						span {
+							background: $slight-white;
+							@include padding(0 .5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+					h3 {
+						line-height: 3.1rem;
+						span {
+							background: $slight-white;
+							@include padding(0 .5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+					p {
+						line-height: 1rem;
+						span {
+							background: $slight-white;
+							@include padding(.3rem .5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+				}
+				@include MQ(SM) {
+					padding: 1em;
+					h1 {
+						line-height: 3.8rem;
+						span {
+							background: $slight-white;
+							@include padding(.5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+					h2 {
+						line-height: 2.7rem;
+						span {
+							background: $slight-white;
+							@include padding(.5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+					h3 {
+						line-height: 3rem;
+						span {
+							background: $slight-white;
+							@include padding(.5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+					p {
+						line-height: 1rem;
+						span {
+							background: $slight-white;
+							@include padding(.5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+				}
+				@include MQ(M) {
+					padding: 3em;
+					h1 {
+						line-height: 3.7rem;
+						span {
+							background: $slight-white;
+							@include padding(.5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+					h2 {
+						line-height: 3.4rem;
+						span {
+							background: $slight-white;
+							@include padding(.5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+					h3 {
+						line-height: 2.8rem;
+						span {
+							background: $slight-white;
+							@include padding(.5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+					p {
+						line-height: 1.2rem;
+						span {
+							background: $slight-white;
+							@include padding(.5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+				}
+				@include MQ(L) {
+					padding: 3em;
+					h1 {
+						line-height: 4.5rem;
+						span {
+							background: $slight-white;
+							@include padding(.5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+					h2 {
+						line-height: 3.8rem;
+						span {
+							background: $slight-white;
+							@include padding(.5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+					h3 {
+						line-height: 2.8rem;
+						span {
+							background: $slight-white;
+							@include padding(.5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+					p {
+						line-height: 1.1rem;
+						span {
+							background: $slight-white;
+							@include padding(.5rem);
+							@include margin(1rem 0);
+							box-decoration-break: clone;
+							-webkit-box-decoration-break: clone;
+						}
+					}
+				}
+			}
+		}
+	}
+	.timeline {
+		border-top: 1rem $nue-black solid;
+		border-bottom: 1rem $nue-black solid;
+		@include padding(1rem auto);
+		@include margin(0);
+		list-style: none;
+
+		> li {
+			display: table;
+			overflow: hidden;
+			position: relative;
+			@include margin(null auto);
+			@include padding(null);
+			@include MQ(S) {
+				width: 320px;
+			}
+			@include MQ(SM) {
+				width: 540px;
+			}
+			@include MQ(M) {
+				width: 630px;
+			}
+			@include MQ(L) {
+				width: 900px;
+			}
+			.timeline-date {
+				font-family: $header-font-family;
+				font-weight: 800;
+
+				@include MQ(S) {
+					display: block;
+					@include padding(.5rem null .5rem 1.75rem);
+					@include margin(0 0 0 .5rem);
+					border-left: .2rem $nue-black solid;
+				}
+				@include MQ(SM) {
+					display: table-cell;
+					width: 150px;
+					border-left: none;
+				}
+				@include MQ(M) {
+					display: table-cell;
+					width: 160px;
+					border-left: none;
+				}
+				@include MQ(L) {
+					display: table-cell;
+					width: 200px;
+					border-left: none;
+				}
+			}
+			.timeline-content {
+				
+
+				@include MQ(S) {
+					display: block;
+					border-left: .2rem $nue-black solid;
+					@include margin(0 0 0 .5rem);
+					@include padding(0 1rem .5rem 1.75rem);
+				}
+				@include MQ(SM) {
+					display: table-cell;
+					border-left: .5rem $nue-black solid;
+					@include margin(0);
+					@include padding(1rem 1rem .5rem 1.75rem);
+				}
+				@include MQ(M) {
+					display: table-cell;
+					border-left: .5rem $nue-black solid;
+					@include margin(0);
+					@include padding(1rem 1rem .5rem 1.75rem);
+				}
+				@include MQ(L) {
+					display: table-cell;
+					border-left: .5rem $nue-black solid;
+					@include margin(0);
+					@include padding(1rem 1rem .5rem 1.75rem);
+				}
+
+				h3 {
+					@include padding(null);
+					@include margin(0);
+				}
+
+				p {
+					@include padding(null);
+					@include margin(.5rem 0 .5rem);
+				}
+
+				&:before {
+					content: '';
+					background: $nue-black;
+					position: absolute;
+					border-radius: 100%;
+					@include MQ(S) {
+						width: 1rem;
+						height: 1rem;
+						top: .8rem;
+						left: em(1px);
+					}
+					@include MQ(SM) {
+						width: 2rem;
+						height: 2rem;
+						top: 1.2em;
+						left: em(137.5px);
+					}
+					@include MQ(M) {
+						width: 2rem;
+						height: 2rem;
+						top: 1.2em;
+						left: em(147.5px);
+					}
+					@include MQ(L) {
+						width: 2rem;
+						height: 2rem;
+						top: 1.2em;
+						left: em(187.5px);
+					}
+				}	
+			}
+		}
+	}
+	.project-article {
+
+		.image-callout-set {
+			height: 90vh;
+			min-height: 300px;
+			display: table;
+			width: 100%;
+			padding: 0;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			@include MQ(S) {
+				@include margin(null null 15rem null );
+			}
+			@include MQ(SM) {
+				@include margin(null null 10rem null );
+			}
+			@include MQ(M) {
+				@include margin(1rem null);
+			}
+			@include MQ(L) {
+				@include margin(1rem null);
+			}
+	
+			.copy-internal {
+				display: table-cell;
+				vertical-align: middle;
+				
+				.copy-box {
+					background: $base-body-color;
+					border: 1em solid $base-background-color;
+					@include MQ(S) {
+						max-width: 100%;
+						position: relative;
+						top: 50vh;
+						vertical-align: center;
+						@include margin(null 1rem);
+						@include padding(null 2rem);
+					}
+					@include MQ(M) {
+						max-width: 550px;
+						position: relative;
+						top: 20vh;
+						vertical-align: center;
+						@include margin(null 1rem);
+						@include padding(null 2rem);
+					}
+					@include MQ(L) {
+						max-width: 550px;
+						position: static;
+						top: 0;
+						@include margin(2rem 5rem);
+						@include padding(2rem 3rem);
+					}
+					&.left {
+						float: left;
+					}
+					&.right {
+						float: right;
+					}
+
+					.copy-detail {
+						&.big-text {
+							p {
+								font-family: $header-font-family;
+								font-weight: 700;
+								@include MQ(S) {
+									font-size: $base-font-size * 1.1;
+									line-height: $base-line-height * 1;
+								}
+								@include MQ(M) {
+									font-size: $base-font-size * 1.5;
+									line-height: $base-line-height * 1;
+								}
+								@include MQ(L) {
+									font-size: $base-font-size * 2;
+									line-height: $base-line-height;
+								}
+							}
+							hr {
+								@include margin(rem(20px) 0);
+								width: 120px;
+								border: 5px solid;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.content-set {
+			background: $base-background-color;
+			color: $base-body-color;
+			.copy-box {
+				@include margin(3rem auto 2rem);
+				@include MQ(S) {
+					@include padding(2rem 1rem 4rem);
+					max-width: rem(680px);
+				}
+				@include MQ(M) {
+					@include padding(2rem null 4rem);
+					max-width: rem(680px);
+				}
+				@include MQ(L) {
+					@include padding(2rem null 4rem);
+					max-width: rem(800px);
+				}
+				ol {
+					@include margin(1rem 0);
+					@include padding(0 2rem);
+					@extend %default-ol;
+				}
+				img {
+
+				}
+			}
+		}
+
+		.video-set {
+			@include margin(3rem auto 2rem);
+			max-width: 1200px;
+		}
+
+		.table-set {
+			@include MQ(S) {
+				@include margin(2rem auto 2rem);
+				@include padding(null 1rem);
+				max-width: rem(680px);
+			}
+			@include MQ(M) {
+				@include margin(5rem auto 5rem);
+				@include padding(null 2rem);
+				max-width: rem(780px);
+
+			}
+			@include MQ(L) {
+				@include margin(5rem auto 5rem);
+				@include padding(null 5rem);
+				max-width: rem(1200px);
+			}
+		}
+
+		.headline-set { 
+			@include margin(2rem auto 2rem);
+			@include MQ(S) {
+				@include padding(null 1rem);
+				max-width: rem(680px);
+			}
+			@include MQ(M) {
+				@include padding(null 0);
+				max-width: rem(680px);
+			}
+			@include MQ(L) {
+				@include padding(null 0);
+				max-width: rem(800px);
+			}
+			h1.bold-headline {
+				@include MQ(S) {
+					font-size: $base-font-size * 3
+				}
+				@include MQ(M) {
+					font-size: $base-font-size * 4	
+				}
+				@include MQ(L) {
+					font-size: $base-font-size * 6			
+				}
+			}
+		}
+
+		.image-set {
+			width: 100%;
+			@include margin(1rem auto);
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.qoute-set {
+			blockquote {
+				border: 1em solid $base-background-color;
+				@include MQ(S) {
+					margin: 1em;
+					@include padding(1.4em .5em);
+					text-align: left;
+					font-size: $base-font-size;
+					line-height: $base-line-height * 1;
+				}
+				@include MQ(M) {
+					margin: 2em;
+					@include padding(2em 1em 1.5em);
+					text-align: left;
+					font-size: $base-font-size * 1.2;
+					line-height: $base-line-height * 1;
+				}
+				@include MQ(L) {
+					margin: 5em;
+					font-size: $base-font-size * 1.5;
+					text-align: left;
+					line-height: $base-line-height;
+					@include padding(2em 1em 1.5em);
+				}
+				.cite {
+					font-size: $base-font-size; 
+					text-align: left;
+				}		
+			}
+		}
+
+		.client-set {
+			.copy-box {
+				border: 1em solid $base-background-color;
+
+				@include MQ(S) {
+					@include margin(3rem 1rem 2rem);
+					@include padding(2rem 1rem 4rem);
+					max-width: rem(680px);
+				}
+				@include MQ(M) {
+					@include margin(3rem auto 2rem);
+					@include padding(2rem null 4rem);
+					max-width: rem(680px);
+				}
+				@include MQ(L) {
+					@include margin(3rem auto 2rem);
+					@include padding(2rem null 4rem);
+					max-width: rem(800px);
+				}
+			}
+		}
+
+		.code-set {
+			pre {
+				@include padding(3rem 3rem);
+				counter-reset:line-numbering;
+				background: tint( $nue-black, 10% );
+				color: $slight-white;
+				overflow: scroll;
+				.line {
+					margin-right: 3rem;
+				}
+				.line::before {
+					content: counter(line-numbering);
+					counter-increment: line-numbering;
+					padding-right: 1rem;
+					/* space after numbers */
+					padding-left:8px;
+					width: 1.5em;
+					text-align: right;
+					color: $bright-red;
+				}
+				@include MQ(S) {
+					@include margin(1rem auto 2rem);
+					font-size: $base-font-size * .95;
+					line-height: $base-line-height * 1.1;
+				}
+				@include MQ(M) {
+					@include margin(1rem auto 5rem);
+					font-size: $base-font-size * 1.3;
+					line-height: $base-line-height * 1.3;
+				}
+				@include MQ(L) {
+					@include margin(1rem auto 5rem);
+					font-size: $base-font-size * 1.3;
+					line-height: $base-line-height * 1.3;
+				}
+			}
+		}
+	}
+
+
+}

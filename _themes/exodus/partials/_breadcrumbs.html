@@ -1,0 +1,11 @@
+<nav class="breadcrumbs">
+    <ul>
+        {{ nav:breadcrumbs include_home="false" }}
+            {{ if is_current }}
+                <li class="current">{{ title|truncate:30 }}</li>
+            {{ else }}
+                <li><a class="bread-progress" href="{{ url }}">{{ title|truncate:25 }}</a><span>&#x2192;</span></li>
+            {{ endif }}
+        {{ /nav:breadcrumbs }}
+    </ul>
+</nav>
