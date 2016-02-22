@@ -1,5 +1,6 @@
 //////////// Large headlines or inline paragraphs
 	.grid-item-headline {
+		border-top: 1em solid tomato;
 		border-bottom: 1em solid $nue-black;
 		@include MQ(S) {
 			height: 100vh;
